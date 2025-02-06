@@ -85,10 +85,16 @@
 		</plugins>
 	</build>
     <distributionManagement>
-	<repository>
-	<id>deploymentRepo</id>
-	<name>Nexus Repository</name>
-	<url>http://localhost:8081/repository/maven-releases/</url>
-	</repository>
-	</distributionManagement>
+    <repository>
+        <id>deploymentRepo</id>
+        <name>Nexus Release Repository</name>
+        <url>http://localhost:8081/repository/projet-tpachat-devops/</url>
+    </repository>
+    <snapshotRepository>
+        <id>deploymentRepo-snapshots</id>
+        <name>Nexus Snapshot Repository</name>
+        <url>http://localhost:8081/repository/projet-tpachat-devops/</url>
+    </snapshotRepository>
+</distributionManagement>
+
 </project>
